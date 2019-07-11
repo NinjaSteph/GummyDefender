@@ -15,7 +15,6 @@ public class EnemySpawner : MonoBehaviour
 			yield return StartCoroutine(SpawnAllWaves());
 		}
 		while (looping);
-		
 	}
 
 	private IEnumerator SpawnAllWaves() {

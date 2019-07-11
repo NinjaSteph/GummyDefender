@@ -381,16 +381,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -9166163073756309566, guid: accd6e68f7ced7846871ed0c17cad80d,
-        type: 3}
-      propertyPath: health
-      value: 500
-      objectReference: {fileID: 0}
     - target: {fileID: 7710172160520375473, guid: accd6e68f7ced7846871ed0c17cad80d,
         type: 3}
       propertyPath: m_Name
       value: Enemy01
       objectReference: {fileID: 0}
+    - target: {fileID: -9166163073756309566, guid: accd6e68f7ced7846871ed0c17cad80d,
+        type: 3}
+      propertyPath: health
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: -9166163073756309566, guid: accd6e68f7ced7846871ed0c17cad80d,
+        type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 3862501046545753561, guid: 941cce9c4127be346bf0a5eb467673c1,
+        type: 3}
     - target: {fileID: 7710172160520375475, guid: accd6e68f7ced7846871ed0c17cad80d,
         type: 3}
       propertyPath: m_LocalPosition.x
