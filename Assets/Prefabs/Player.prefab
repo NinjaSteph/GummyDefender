@@ -101,6 +101,13 @@ MonoBehaviour:
     type: 3}
   projectileSpeed: 20
   projectileFiringPeriod: 0.1
+  explosionVFX: {fileID: 184158388458336733, guid: 738efa7cd46a02346b4aa9de5e1caba3,
+    type: 3}
+  durationOfExplosion: 1
+  laserSFX: {fileID: 8300000, guid: 67260d82878fa98419ca7d345a0c1762, type: 3}
+  laserSFXVolume: 0.05
+  deathSFX: {fileID: 8300000, guid: 5cef3e99d5c196349b4c4dfd2f6903b0, type: 3}
+  deathSFXVolume: 1
 --- !u!50 &2430061139607751270
 Rigidbody2D:
   serializedVersion: 4

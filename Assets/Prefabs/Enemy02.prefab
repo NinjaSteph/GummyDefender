@@ -110,9 +110,16 @@ MonoBehaviour:
   shotCounter: 0
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
+  projectileSpeed: 20
+  durationOfExplosion: 1
   projectilePrefab: {fileID: 7609438800333979567, guid: e989f7272ed181a4eb0f012096125342,
     type: 3}
-  projectileSpeed: 20
+  explosionVFX: {fileID: 184158388458336733, guid: 388478474ac19244a928b6772ac170ed,
+    type: 3}
+  laserSFX: {fileID: 8300000, guid: 8d649eaa884c0324b9f2663809870117, type: 3}
+  laserSFXVolume: 0.5
+  deathSFX: {fileID: 8300000, guid: 946db4fd9a701c741a8ab38ec6740af9, type: 3}
+  deathSFXVolume: 1
 --- !u!58 &-4837551268797795285
 CircleCollider2D:
   m_ObjectHideFlags: 0

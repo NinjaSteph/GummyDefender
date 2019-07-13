@@ -16,6 +16,14 @@ public class Player : MonoBehaviour {
 	[SerializeField] float projectileSpeed = 20f;
 	[SerializeField] float projectileFiringPeriod = 0.1f;
 
+	[Header("FX")]
+	[SerializeField] GameObject explosionVFX;
+	[SerializeField] float durationOfExplosion = 1f;
+	[SerializeField] AudioClip laserSFX;
+	[SerializeField] [Range(0, 2)] float laserSFXVolume = 1f;
+	[SerializeField] AudioClip deathSFX;
+	[SerializeField] [Range(0, 2)] float deathSFXVolume = 1f;
+
 	// cached variables
 	float xMin;
 	float xMax;
@@ -47,6 +55,7 @@ public class Player : MonoBehaviour {
 		while (true) {
 			GameObject laser = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
 			laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, projectileSpeed);
+			AudioSource.PlayClipAtPoint(laserSFX, Camera.main.transform.position, laserSFXVolume);
 			yield return new WaitForSeconds(projectileFiringPeriod);
 		}
 	}
@@ -78,7 +87,14 @@ public class Player : MonoBehaviour {
 		health -= damageDealer.GetDamage();
 		damageDealer.Hit();
 		if (health <= 0) {
-			Destroy(gameObject);
+			DestroyPlayer();
 		}
+	}
+
+	private void DestroyPlayer() {
+		AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSFXVolume);
+		GameObject explosion = Instantiate(explosionVFX, transform.position, transform.rotation);
+		Destroy(explosion, durationOfExplosion);
+		Destroy(gameObject);
 	}
 }

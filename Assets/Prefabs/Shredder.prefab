@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3524011322934985601}
   - component: {fileID: 7738334400268648101}
   m_Layer: 0
-  m_Name: LaserCollider
+  m_Name: ShredderTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
