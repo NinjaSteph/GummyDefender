@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3930133827306465254
+--- !u!1 &7083868333884828216
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3930133827306465252}
-  - component: {fileID: 3930133827306465253}
+  - component: {fileID: 7083868333884828218}
+  - component: {fileID: 7083868333884828219}
   m_Layer: 0
-  m_Name: EnemySpawner
+  m_Name: SceneLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3930133827306465252
+--- !u!4 &7083868333884828218
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3930133827306465254}
+  m_GameObject: {fileID: 7083868333884828216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,22 +31,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3930133827306465253
+--- !u!114 &7083868333884828219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3930133827306465254}
+  m_GameObject: {fileID: 7083868333884828216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33dc7d79973c0f64ca162eaef9a4ee0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8448ce3c88fed8f409643c990b89f1a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveConfigs:
-  - {fileID: 11400000, guid: 3f7105d47245eda4297c337ba971d04d, type: 2}
-  - {fileID: 11400000, guid: fc53769d60b915344bed04b9e7e2cbac, type: 2}
-  - {fileID: 11400000, guid: 01f7795562456d74a930dd6ae2f59fdf, type: 2}
-  - {fileID: 11400000, guid: af8a1a2b643f15f40ad1c0f1d79e3962, type: 2}
-  startingWave: 0
-  looping: 0

@@ -96,5 +96,7 @@ public class Player : MonoBehaviour {
 		GameObject explosion = Instantiate(explosionVFX, transform.position, transform.rotation);
 		Destroy(explosion, durationOfExplosion);
 		Destroy(gameObject);
+		SceneLoader sceneLoader = new SceneLoader();
+		sceneLoader.LoadGameOver();
 	}
 }
