@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1480256154425182279}
   - component: {fileID: 1480256154425182278}
   m_Layer: 0
-  m_Name: Starfield2
+  m_Name: StarfieldClose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,8 +221,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 1, b: 1, a: 0.627451}
-      maxColor: {r: 1, g: 1, b: 1, a: 0.30588236}
+      minColor: {r: 1, g: 1, b: 1, a: 0.2784314}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.09803922}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

@@ -23,6 +23,8 @@ public class Player : MonoBehaviour {
 	[SerializeField] [Range(0, 2)] float laserSFXVolume = 1f;
 	[SerializeField] AudioClip deathSFX;
 	[SerializeField] [Range(0, 2)] float deathSFXVolume = 1f;
+	[SerializeField] AudioClip hitSFX;
+	[SerializeField] [Range(0, 2)] float hitSFXVolume = .75f;
 
 	// cached variables
 	float xMin;
@@ -41,6 +43,10 @@ public class Player : MonoBehaviour {
 		Move();
 		Fire();
     }
+
+	public int GetHealth() {
+		return health;
+	}
 
 	private void Fire() {
 		if (Input.GetButtonDown("Fire1")) {
@@ -89,6 +95,9 @@ public class Player : MonoBehaviour {
 		if (health <= 0) {
 			DestroyPlayer();
 		}
+		else {
+			AudioSource.PlayClipAtPoint(hitSFX, Camera.main.transform.position, hitSFXVolume);
+		}
 	}
 
 	private void DestroyPlayer() {
@@ -96,7 +105,6 @@ public class Player : MonoBehaviour {
 		GameObject explosion = Instantiate(explosionVFX, transform.position, transform.rotation);
 		Destroy(explosion, durationOfExplosion);
 		Destroy(gameObject);
-		SceneLoader sceneLoader = new SceneLoader();
-		sceneLoader.LoadGameOver();
+		FindObjectOfType<SceneLoader>().LoadGameOver();
 	}
 }

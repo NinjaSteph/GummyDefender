@@ -108,6 +108,8 @@ MonoBehaviour:
   laserSFXVolume: 0.05
   deathSFX: {fileID: 8300000, guid: 5cef3e99d5c196349b4c4dfd2f6903b0, type: 3}
   deathSFXVolume: 1
+  hitSFX: {fileID: 8300000, guid: 8f74290c3716ea54690ce067e6ebd598, type: 3}
+  hitSFXVolume: 0.75
 --- !u!50 &2430061139607751270
 Rigidbody2D:
   serializedVersion: 4
